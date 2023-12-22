@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "261524407922",
+    "project_id": "uasrf1",
+    "storage_bucket": "uasrf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261524407922:android:a01531d713015671efa4eb",
+        "android_client_info": {
+          "package_name": "com.example.uas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHK4hNmiO5ly8VopV_7LQ23orqgDZx27w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

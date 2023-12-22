@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+                android:elevation="4dp"
+                android:layout_marginLeft="15dp"
+                app:tint="@color/white" />
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/imageDetail"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/nemo"/>
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Title"
+                android:textSize="42sp"
+                android:layout_marginTop="425dp"
+                android:fontFamily="@font/poppins_semibold"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/detail_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

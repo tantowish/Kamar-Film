@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    android:id="@+id/parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.65"
+        android:orientation="horizontal" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="horizontal" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splashscreen"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/splashscreen"
+        app:lottie_repeatCount="99"
+        app:lottie_repeatMode="reverse"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Ready to Showtime"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/indigo_400"
+        app:layout_constraintTop_toBottomOf="@+id/guideLow"
+        app:layout_constraintLeft_toLeftOf="@id/verStart"
+        app:layout_constraintRight_toRightOf="@+id/verEnd"
+        />
+
+    <TextView
+        android:id="@+id/tvTap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap anywhere to continue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/horEnd"
+        app:layout_constraintLeft_toLeftOf="@id/verStart"
+        app:layout_constraintRight_toRightOf="@+id/verEnd"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
