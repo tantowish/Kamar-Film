@@ -121,7 +121,7 @@ class RegisterFragment : Fragment() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 val notifChannel = NotificationChannel(
                     channelId,
-                    "Ghibli Studio",
+                    "Kamar Film",
                     NotificationManager.IMPORTANCE_DEFAULT
                 )
                 notifManager.createNotificationChannel(notifChannel)

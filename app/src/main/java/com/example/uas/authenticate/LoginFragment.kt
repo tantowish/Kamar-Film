@@ -69,6 +69,7 @@ class LoginFragment : Fragment() {
                 val intent = Intent(requireActivity(), NotifReceiver::class.java)
                     .putExtra("MESSAGE", "Baca selengkapnya ...")
                 val pendingIntent = PendingIntent.getBroadcast(
+                val pendingIntent = PendingIntent.getBroadcast(
                     requireActivity(),
                     0,
                     intent,
@@ -92,7 +93,7 @@ class LoginFragment : Fragment() {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                     val notifChannel = NotificationChannel(
                         channelId,
-                        "Ghibli Studio",
+                        "Kamar Film",
                         NotificationManager.IMPORTANCE_DEFAULT
                     )
                     notifManager.createNotificationChannel(notifChannel)
